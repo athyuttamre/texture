@@ -4,7 +4,7 @@
 
 p {
 	color: black;
-	font-family: Monotype Corsiva;
+	font-family: Helvetica;
 	text-align: center;
 	font-size: 30px;
 }
@@ -16,6 +16,7 @@ form {
 }
 
 h1 {
+	font-family: Helvetica;
 	text-align: center;
 	font-weight: bolder;
 	font-size: 40px;
@@ -70,7 +71,7 @@ h1 {
 	background-color: white;
 	height: 100px;
 	width: 328px;
-	margin-top: 0%;
+	margin-top: -0.5%;
 	margin-left: 31.5%;
 	text-align: center;
 }
