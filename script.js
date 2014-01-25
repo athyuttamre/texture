@@ -5,7 +5,7 @@ $(document).ready(function(){
         var url = content.match(urlRegex);
         
         if(url.length>0){
-            //$("#databox").slideDown('show');
+            $("#databox").slideDown('show');
             //$("#databox").html("<img src='http://demo.techumber.com/FbUrlParser/loading.gif'>");
             // Getting cross domain data 
             $.get("urlget.php?url="+url,function(response){
@@ -22,4 +22,10 @@ $(document).ready(function(){
         }
         return false;
     });
+    
+    $("input").keyup(function(){
+        if($("input").val().length === 0) {
+            $("#databox").slideUp('show');
+        }
+    })
 });

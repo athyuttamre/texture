@@ -154,6 +154,7 @@ input:focus {
 	width: 500px;
     margin: 30px auto;
 	text-align: center;
+    display: none;
 }
 
 #image, img {
