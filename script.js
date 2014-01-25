@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $("input").keyup(function(){
-        var content = $(this).val();
+    $("#button").click(function(){
+        var content = $("input").val();
         var urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
         
         var url = content.match(urlRegex);
@@ -14,7 +14,8 @@ $(document).ready(function(){
                 var title=(/<title>(.*?)<\/title>/m).exec(response)[1];
                 var desc = (/<meta name="description" content="(.*?)"/m).exec(response)[1];
                 // Loading first .png image src='' data 
-                // var logo=(/src='(.*?).png'/m).exec(response)[1];
+                //var logo = (/<\s*?img\s+[^>]*?\s*src\s*=\s*(["'])((\\?+.)*?)\1[^>]*?>/ig).exec(response)[1];
+                //$("#image").html("<img src='"+logo+"'/>");
                 $("#title").html(title);
                 $("#link").html(url);
                 $("#text").html(desc);
