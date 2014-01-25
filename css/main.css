@@ -45,7 +45,7 @@ h1 {
 #title{
 	border-radius: 1px;
 	border: 1px solid grey;
-	background-color: red;
+	background-color: white;
 	height: 27px;
 	width: 328px;
 	margin-left: 31.5%;
@@ -56,7 +56,7 @@ h1 {
 #link{
 	border-radius: 1px;
 	border: 1px solid grey;
-	background-color: blue;
+	background-color: white;
 	height: 22px;
 	width: 328px;
 	margin-top: 0%;
@@ -67,7 +67,7 @@ h1 {
 #text{
 	border-radius: 1px;
 	border: 1px solid grey;
-	background-color: yellow;
+	background-color: white;
 	height: 100px;
 	width: 328px;
 	margin-top: 0%;
