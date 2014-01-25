@@ -53,19 +53,17 @@ table {
 
 
 @font-face {
-    font-family: 'source_sans_prolight';
-    src: url('sourcesanspro-light-webfont.eot');
-    src: url('sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('sourcesanspro-light-webfont.woff') format('woff'),
-         url('sourcesanspro-light-webfont.ttf') format('truetype'),
-         url('sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+    font-family: 'source_sans_pro';
+   
+    src: url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic.woff') format('woff');
+        
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     background-color: #f6f6f6;
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-family: 'source_sans_pro';
     font-weight: 100;
     color: #575656;
 }
