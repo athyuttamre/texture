@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $("#button").click(function(){
-        var content = $("input").val();
+    $("input").keyup(function(){
+        var content = $(this).val();
         var urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
         
         var url = content.match(urlRegex);
@@ -9,7 +9,7 @@ $(document).ready(function(){
             //$("#databox").slideDown('show');
             //$("#databox").html("<img src='http://demo.techumber.com/FbUrlParser/loading.gif'>");
             // Getting cross domain data 
-            $.get("index.php?url="+url,function(response){
+            $.get("urlget.php?url="+url,function(response){
                 // Loading <title></title>data
                 var title=(/<title>(.*?)<\/title>/m).exec(response)[1];
                 var desc = (/<meta name="description" content="(.*?)"/m).exec(response)[1];
