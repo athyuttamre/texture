@@ -34,6 +34,7 @@ h1 {
 }
 
 #image{
+	content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZsHtUvbWKp_rdOgsWi4U9HvEMfZVv8nEtsiW3HEJZMFJT4R-qHg);
 	border-radius: 1px;
 	border: 1px solid grey;
 	background-color: white;
@@ -44,36 +45,57 @@ h1 {
 }
 
 #title{
+	position: relative;
 	border-radius: 1px;
 	border: 1px solid grey;
+	border-bottom: none;
+	padding-left: 3px;
+	padding-top: 3px;
 	background-color: white;
 	height: 27px;
-	width: 328px;
+	width: 325px;
 	margin-left: 31.5%;
 	margin-top: -32%; 
-	text-align: center;
-}
+	text-align: left;
+	font-family: Ariel;
+	font-size: 16px;
+	font-weight: bold;
+}	
 
 #link{
+	position: relative;
 	border-radius: 1px;
 	border: 1px solid grey;
+	border-top: none;
+	border-bottom: none;
 	background-color: white;
 	height: 22px;
-	width: 328px;
+	width: 325px;
 	margin-top: 0%;
 	margin-left: 31.5%;
-	text-align: center;
+	text-align: left;
+	color: black;
+	font-size: 10px;
+	font-family: Ariel;
+	text-decoration: underline;
+	padding-left: 3px;
 }
 
 #text{
+	position: relative;
 	border-radius: 1px;
 	border: 1px solid grey;
+	border-top: none;
+	border-bottom: none;
 	background-color: white;
 	height: 100px;
-	width: 328px;
+	width: 325px;
 	margin-top: -0.5%;
 	margin-left: 31.5%;
-	text-align: center;
+	text-align: left;
+	font-size: 14px;
+	font-family: Ariel;
+	padding-left: 3px;
 }
 
 
