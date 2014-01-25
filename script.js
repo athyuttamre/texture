@@ -9,7 +9,7 @@ $(document).ready(function(){
             //$("#databox").slideDown('show');
             //$("#databox").html("<img src='http://demo.techumber.com/FbUrlParser/loading.gif'>");
             // Getting cross domain data 
-            $.get("urlget.php?url="+url,function(response){
+            $.get("index.php?url="+url,function(response){
                 // Loading <title></title>data
                 var title=(/<title>(.*?)<\/title>/m).exec(response)[1];
                 var desc = (/<meta name="description" content="(.*?)"/m).exec(response)[1];
