@@ -51,14 +51,18 @@ table {
 
 /* END RESET STYLESHEET */
 
-
 @font-face {
+<<<<<<< HEAD
     font-family: 'source_sans_pro';
    
     src: url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic.woff') format('woff');
         
     font-weight: normal;
     font-style: normal;
+=======
+  font-family: "Source Sans Pro";
+  src: url('/assets/fonts/sourcesanspro-regular-webfont.eot?') format('eot'), url('/assets/fonts/sourcesanspro-regular-webfont.woff') format('woff'), url('/assets/fonts/sourcesanspro-regular-webfont.ttf') format('truetype');
+>>>>>>> 723780089bdb5c059e5d79474e045ca9ef221eb2
 }
 
 body {
@@ -70,6 +74,7 @@ body {
 
 * {
 	background-color: white;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -139,7 +144,8 @@ input:focus {
 }
 
 #button p:hover {
-    font-weight: 500;
+    color: black;
+    font-weight: 400;
 }
 
 #databox {
@@ -150,8 +156,7 @@ input:focus {
 	text-align: center;
 }
 
-#image {
-	content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZsHtUvbWKp_rdOgsWi4U9HvEMfZVv8nEtsiW3HEJZMFJT4R-qHg);
+#image, img {
 	height: 150px;
 	width: 150px;
     float: left;
@@ -165,6 +170,7 @@ input:focus {
 }
 
 #title {
+    cursor: pointer;
 	position: relative;
 	width: 340px;
     margin-top: 7px;
@@ -172,9 +178,14 @@ input:focus {
     text-align: left;
 	font-size: 24px;
 	font-weight: 400;
-}	
+}
+
+#title:hover {
+    color: black;
+}
 
 #link {
+    cursor: pointer;
 	position: relative;
 	height: 22px;
 	width: 325px;
@@ -184,6 +195,10 @@ input:focus {
 	text-decoration: underline;
     margin-top: 4px;
 	margin-left: 10px;
+}
+
+#link:hover {
+    color: black;
 }
 
 #text {
@@ -214,5 +229,6 @@ a {
 }
 
 a:hover {
+    color: black;
     font-weight: 400;
 }
