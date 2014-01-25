@@ -1,5 +1,5 @@
 * {
-	background-color: #FFB6C1;
+	background-color: white;
 }
 
 p {
@@ -21,16 +21,60 @@ h1 {
 	font-size: 40px;
 }
 
-#main_div {
-	text-align: center;
-	position: absolute;
+#databox {
+	border-radius: 1px;
+	border: 2px solid grey;
+	background-color: white;
+	height: 150px;
+	width: 480px;
 	margin-right: 15%;
-	margin-left: 15%;
+	margin-left: 25%;
+	text-align: center;
 }
 
-.content {
-	position: relative;
+#image{
+	border-radius: 1px;
+	border: 1px solid grey;
+	background-color: white;
+	height: 150px;
+	width: 150px;
+	margin-left: 0%;
+	text-align: center;
 }
+
+#title{
+	border-radius: 1px;
+	border: 1px solid grey;
+	background-color: red;
+	height: 27px;
+	width: 328px;
+	margin-left: 31.5%;
+	margin-top: -32%; 
+	text-align: center;
+}
+
+#link{
+	border-radius: 1px;
+	border: 1px solid grey;
+	background-color: blue;
+	height: 22px;
+	width: 328px;
+	margin-top: 0%;
+	margin-left: 31.5%;
+	text-align: center;
+}
+
+#text{
+	border-radius: 1px;
+	border: 1px solid grey;
+	background-color: yellow;
+	height: 100px;
+	width: 328px;
+	margin-top: 0%;
+	margin-left: 31.5%;
+	text-align: center;
+}
+
 
 #button {
 	border: 2px outset black;
@@ -39,7 +83,8 @@ h1 {
 	height: auto;
 	width: 70px;
 	text-align: center;
-	margin-left: 35%;
+	margin-left: 25%;
+
 }
 
 
