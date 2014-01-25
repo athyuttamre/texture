@@ -13,8 +13,11 @@ $(document).ready(function(){
                 var title=(/<title>(.*?)<\/title>/m).exec(response)[1];
                 var desc = (/<meta name="description" content="(.*?)"/m).exec(response)[1];
                 // Loading first .png image src='' data 
-                //var logo = (/<\s*?img\s+[^>]*?\s*src\s*=\s*(["'])((\\?+.)*?)\1[^>]*?>/ig).exec(response)[1];
-                //$("#image").html("<img src='"+logo+"'/>");
+                //var og = (/<meta property="og:image" content="(.*?)"\/>/ig).exec(response)[1];
+                var parser = new DOMParser()
+                var doc = parser.parseFromString(response, "text/html")
+                var firstImage = $(doc).find("img")[0]
+                $("#image").html("<img src='"+url+$(firstImage).attr("src")+"'/>");
                 $("#title").html("<a href='"+url+"'>"+title+"</a>");
                 $("#link").html("<a href='"+url+"'>"+url+"</a>");
                 $("#text").html(desc);
