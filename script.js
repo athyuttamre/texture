@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    $("input").keyup(function(){
-        var content = $(this).val();
+    $("#button").click(function(){
+        var content = $("input").val();
         var urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
         
         var url = content.match(urlRegex);
