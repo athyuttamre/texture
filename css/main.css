@@ -52,22 +52,13 @@ table {
 /* END RESET STYLESHEET */
 
 @font-face {
-<<<<<<< HEAD
-    font-family: 'source_sans_pro';
-   
-    src: url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200italic.woff') format('woff');
-        
-    font-weight: normal;
-    font-style: normal;
-=======
   font-family: "Source Sans Pro";
   src: url('/assets/fonts/sourcesanspro-regular-webfont.eot?') format('eot'), url('/assets/fonts/sourcesanspro-regular-webfont.woff') format('woff'), url('/assets/fonts/sourcesanspro-regular-webfont.ttf') format('truetype');
->>>>>>> 723780089bdb5c059e5d79474e045ca9ef221eb2
 }
 
 body {
     background-color: #f6f6f6;
-    font-family: 'source_sans_pro';
+    font-family: 'Source Sans Pro';
     font-weight: 100;
     color: #575656;
 }
@@ -78,9 +69,13 @@ body {
 }
 
 p {
-	color: black;
+	color: #575656;
 	text-align: center;
-	font-size: 30px;
+	font-size: 14px;
+}
+
+.aboutp {
+    width: 600px;
 }
 
 form {
@@ -100,6 +95,12 @@ h2 {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 100;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 20px;
 }
 
 #main_div {
@@ -226,7 +227,7 @@ input:focus {
 
 a {
     text-decoration: none;
-    color: #575656;
+    color: #454343;
 }
 
 a:hover {
