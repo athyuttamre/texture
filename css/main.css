@@ -51,16 +51,9 @@ table {
 
 /* END RESET STYLESHEET */
 
-
 @font-face {
-    font-family: 'source_sans_proregular';
-    src: url('sourcesanspro-regular-webfont.eot');
-    src: url('sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('sourcesanspro-regular-webfont.woff') format('woff'),
-         url('sourcesanspro-regular-webfont.ttf') format('truetype'),
-         url('sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Source Sans Pro";
+  src: url('/assets/fonts/sourcesanspro-regular-webfont.eot?') format('eot'), url('/assets/fonts/sourcesanspro-regular-webfont.woff') format('woff'), url('/assets/fonts/sourcesanspro-regular-webfont.ttf') format('truetype');
 }
 
 body {
@@ -142,7 +135,8 @@ input:focus {
 }
 
 #button p:hover {
-    font-weight: 500;
+    color: black;
+    font-weight: 400;
 }
 
 #databox {
@@ -167,6 +161,7 @@ input:focus {
 }
 
 #title {
+    cursor: pointer;
 	position: relative;
 	width: 340px;
     margin-top: 7px;
@@ -174,9 +169,14 @@ input:focus {
     text-align: left;
 	font-size: 24px;
 	font-weight: 400;
-}	
+}
+
+#title:hover {
+    color: black;
+}
 
 #link {
+    cursor: pointer;
 	position: relative;
 	height: 22px;
 	width: 325px;
@@ -186,6 +186,10 @@ input:focus {
 	text-decoration: underline;
     margin-top: 4px;
 	margin-left: 10px;
+}
+
+#link:hover {
+    color: black;
 }
 
 #text {
@@ -216,5 +220,6 @@ a {
 }
 
 a:hover {
+    color: black;
     font-weight: 400;
 }

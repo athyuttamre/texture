@@ -2,7 +2,6 @@ $(document).ready(function(){
     $("#button").click(function(){
         var content = $("input").val();
         var urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-        
         var url = content.match(urlRegex);
         
         if(url.length>0){
@@ -16,8 +15,8 @@ $(document).ready(function(){
                 // Loading first .png image src='' data 
                 //var logo = (/<\s*?img\s+[^>]*?\s*src\s*=\s*(["'])((\\?+.)*?)\1[^>]*?>/ig).exec(response)[1];
                 //$("#image").html("<img src='"+logo+"'/>");
-                $("#title").html(title);
-                $("#link").html(url);
+                $("#title").html("<a href='"+url+"'>"+title+"</a>");
+                $("#link").html("<a href='"+url+"'>"+url+"</a>");
                 $("#text").html(desc);
             });
         }
