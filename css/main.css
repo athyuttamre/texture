@@ -1,0 +1,237 @@
+/* RESET STYLE SHEET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END RESET STYLESHEET */
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url('/assets/fonts/sourcesanspro-regular-webfont.eot?') format('eot'), url('/assets/fonts/sourcesanspro-regular-webfont.woff') format('woff'), url('/assets/fonts/sourcesanspro-regular-webfont.ttf') format('truetype');
+}
+
+body {
+    background-color: #f6f6f6;
+    font-family: 'Source Sans Pro';
+    font-weight: 100;
+    color: #575656;
+}
+
+* {
+	background-color: white;
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+}
+
+p {
+	color: #575656;
+	text-align: center;
+	font-size: 14px;
+}
+
+.aboutp {
+    width: 600px;
+}
+
+form {
+	text-align: center;
+	display: inline-block;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 100;
+	font-size: 72px;
+    margin: 30px auto 10px auto;
+}
+
+h2 {
+	margin: -10px auto 50px auto;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#main_div {
+	padding-top: 40px; 
+}
+
+#insert_url {
+	width: 700px;
+    margin: auto;
+}
+
+input {
+    border: 2px solid #575656;
+    width: 450px;
+    height: 30px;
+    display: inline-block;
+    font-family: inherit;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+#button {
+	border: 2px solid #575656;
+    padding: 1px;
+	height: 30px;
+	width: 150px;
+    margin: 0px auto 0px -6px;
+	text-align: center;
+    display: inline-block;
+}
+
+#button p {
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 3px;
+}
+
+#button p:hover {
+    color: black;
+    font-weight: 300;
+}
+
+#databox {
+	border: 2px solid #575656;
+	height: 150px;
+	width: 500px;
+    margin: 30px auto;
+	text-align: center;
+    display: none;
+    overflow: scroll;
+}
+
+#image, img {
+	height: 150px;
+	width: 150px;
+    float: left;
+}
+
+#data {
+    position: relative;
+    float: right;
+    height: 150px;
+    width: 350px;
+}
+
+#title {
+    cursor: pointer;
+	position: relative;
+	width: 340px;
+    margin-top: 7px;
+    margin-left: 10px;
+    text-align: left;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+#title:hover {
+    color: black;
+}
+
+#link {
+    cursor: pointer;
+	position: relative;
+	height: 22px;
+	width: 325px;
+	text-align: left;
+	color: #696969;
+	font-size: 14px;
+	text-decoration: underline;
+    margin-top: 4px;
+	margin-left: 10px;
+}
+
+#link:hover {
+    color: black;
+}
+
+#text {
+    position: relative;
+	width: 325px;
+	text-align: left;
+	font-size: 15px;
+    font-weight: 200;
+    margin-left: 10px;
+	color: #696969;
+}
+
+#footer {
+	margin: 30px auto;
+	font-size: 14px;
+	color: #696969;
+    text-align: center;
+}
+
+#footer ul li {
+    display: inline-block;
+    margin: auto 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #454343;
+}
+
+a:hover {
+    color: black;
+    font-weight: 400;
+}
