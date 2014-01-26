@@ -1,6 +1,16 @@
 $(document).ready(function(){
     $("#button").click(function(){
-        var content = $("input").val();
+        scrapeURL();
+    });
+    
+    $("input").keyup(function(){
+        if($("input").val().length === 0) {
+            $("#databox").slideUp('show');
+        }
+    })
+    
+    function scrapeURL() {
+    var content = $("input").val();
         var urlRegex = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
         var url = content.match(urlRegex);
         
@@ -24,11 +34,5 @@ $(document).ready(function(){
             });
         }
         return false;
-    });
-    
-    $("input").keyup(function(){
-        if($("input").val().length === 0) {
-            $("#databox").slideUp('show');
-        }
-    })
+}
 });
