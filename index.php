@@ -1,5 +1,7 @@
 <?php
-if($_GET['url']){
+if(!empty($_GET['url'])){
     $url=$_GET['url'];
-    echo file_get_contents($url);
+    if (preg_match('/^http[s]{0,1}:\/\//', $url) > 0) {
+        echo file_get_contents($url);
+    }
 }?>
