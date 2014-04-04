@@ -21,7 +21,10 @@ $(document).ready(function(){
             $.get("index.php?url="+url[0],function(response){
                 // Loading <title></title>data
                 var title=(/<title>(.*?)<\/title>/m).exec(response)[1];
-                var desc = (/<meta name="description" content="(.*?)"/m).exec(response);
+                var desc = (/<meta.*?name=['"]description['"].*?content=['"](.*?)['"]/m).exec(response);
+                if (!desc) {
+                    desc = (/<meta.*?content=['"](.*?)['"].*?name=['"]description['"]/m).exec(response)
+                }
                 if (desc && desc.length > 1) {
                     desc = desc[1];
                 }
